@@ -4,104 +4,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buttershop-Coffe</title>
+    <title>Buttershop-Coffee</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
-    
     <!-- Header -->
-  <header class="header">
-    <div class="logo">
-        <a href="#inicio">
-           <img src="src/images/logonew.png" alt="Logo Buttershop">
-            <span class="logo-text">Buttershop Coffee</span>
-        </a>
-    </div>
-    <nav class="nav">
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#nosotros">Acerca de Nosotros</a></li>
-            <li><a href="#productos">Productos/Servicios</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
-
-</header>
+    <header class="header">
+        <div class="header__logo">
+            <a href="#inicio">
+                <img src="src/images/logonew.png" alt="Logo Buttershop" class="header__logo-img">
+                <span class="header__logo-text">Buttershop Coffee</span>
+            </a>
+        </div>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#inicio" class="nav__link">Inicio</a></li>
+                <li class="nav__item"><a href="#nosotros" class="nav__link">Acerca de Nosotros</a></li>
+                <li class="nav__item"><a href="#productos" class="nav__link">Productos/Servicios</a></li>
+                <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- Sección Inicio -->
-    <section id="inicio" class="section inicio">
+    <section id="inicio" class="section section--inicio">
         <div class="container">
-            <h2>Bienvenidos a Mi Emprendimiento</h2>
-            <p>Ofrecemos productos y servicios de alta calidad para satisfacer a nuestros clientes.</p>
-              <img src="src/images/servicio.png" alt="Logo Buttershop">
+            <h2 class="section__title">Bienvenidos a Mi Emprendimiento</h2>
+            <p class="section__description">Ofrecemos productos y servicios de alta calidad para satisfacer a nuestros clientes.</p>
+            <img src="src/images/servicio.png" alt="Servicio" class="section__image">
         </div>
     </section>
 
     <!-- Sección Acerca de Nosotros -->
-    <section id="nosotros" class="section nosotros">
+    <section id="nosotros" class="section section--nosotros">
         <div class="container">
-            <h2>Acerca de Nosotros</h2>
-            <p>Somos un emprendimiento dedicado a brindar soluciones innovadoras en el mercado.</p>
-              <img src="src/images/nosotros.png" alt="Logo Buttershop">
+            <h2 class="section__title">Acerca de Nosotros</h2>
+            <p class="section__description">Somos un emprendimiento dedicado a brindar soluciones innovadoras en el mercado.</p>
+            <img src="src/images/nosotros.png" alt="Nosotros" class="section__image">
         </div>
     </section>
 
     <!-- Sección Productos o Servicios -->
-    <section id="productos" class="section productos">
+    <section id="productos" class="section section--productos">
         <div class="container">
-            <h2>Productos / Servicios</h2>
+            <h2 class="section__title">Productos / Servicios</h2>
             <div class="product-grid">
                 <div class="product-card">
-                      <img src="src/images/producto1.webp" alt="Logo Buttershop">
-                    <h3>Producto 1</h3>
-                    <p>No te pierdas de nuestros productos de cafe en grano y puro de calidad de Honduras, los mejor 100%.</p>
+                    <img src="src/images/producto1.webp" alt="Producto 1" class="product-card__image">
+                    <h3 class="product-card__title">Producto 1</h3>
+                    <p class="product-card__description">No te pierdas de nuestros productos de café en grano y puro de calidad de Honduras, los mejor 100%.</p>
                 </div>
                 <div class="product-card">
-                     <img src="src/images/producto2.jpg" alt="Logo Buttershop">
-                    <h3>Producto 2</h3>
-                    <p>Contamos con una gran resposteria de excelente sabor al paladar para acompañar un delicioso cafe!!!! </p>
+                    <img src="src/images/producto2.jpg" alt="Producto 2" class="product-card__image">
+                    <h3 class="product-card__title">Producto 2</h3>
+                    <p class="product-card__description">Contamos con una gran repostería de excelente sabor al paladar para acompañar un delicioso café.</p>
                 </div>
                 <div class="product-card">
-                      <img src="src/images/producto3.jpeg" alt="Logo Buttershop">
-                    <h3>Producto 3</h3>
-                    <p>Contamos con una variedad de deliciosos cafe del estilo que tu quieras incluyendo otros tipos de bebidas tambien!!!! .</p>
-                    <a href="#" class="scroll-top">↑</a>
-
+                    <img src="src/images/producto3.jpeg" alt="Producto 3" class="product-card__image">
+                    <h3 class="product-card__title">Producto 3</h3>
+                    <p class="product-card__description">Contamos con una variedad de deliciosos cafés del estilo que tú quieras, incluyendo otras bebidas también.</p>
+                    <a href="#" class="scroll-top scroll-top--show">↑</a>
                 </div>
             </div>
         </div>
     </section>
 
-  <section id="contacto" class="section-contacto">
-    <h2>Contáctanos 💌</h2>
-    <form>
-        <input type="text" placeholder="Nombre" required>
-        <input type="email" placeholder="Correo Electrónico" required>
-        <textarea placeholder="Mensaje" required></textarea>
-        <button type="submit">Enviar</button>
-    </form>
-    <div class="social-media">
-    <a href="#" target="_blank">💌 Facebook</a>
-    <a href="#" target="_blank">💌 Instagram</a>
-    <a href="#" target="_blank">💌 WhatsApp</a>
-</div>
-<section class="testimonios">
-    <h2>Lo que dicen nuestros clientes</h2>
-    <blockquote>"El mejor café de la ciudad, ¡totalmente recomendado!" - María L.</blockquote>
-    <blockquote>"Servicio excelente y postres deliciosos." - Carlos G.</blockquote>
-</section>
-<a href="#" class="chatbot-button" title="Habla con nosotros">
-    💬
-</a>
-<div data-aos="fade-up">
-    <!-- tu contenido -->
-</div>
-</section>
-</div>
+    <!-- Sección Contacto -->
+    <section id="contacto" class="section-contact">
+        <h2 class="section-contact__title">Contáctanos 💌</h2>
+        <form>
+            <input type="text" placeholder="Nombre" required class="section-contact__input">
+            <input type="email" placeholder="Correo Electrónico" required class="section-contact__input">
+            <textarea placeholder="Mensaje" required class="section-contact__textarea"></textarea>
+            <button type="submit" class="section-contact__button">Enviar</button>
+        </form>
+        <div class="social-media">
+            <a href="#" target="_blank" class="social-media__link">💌 Facebook</a>
+            <a href="#" target="_blank" class="social-media__link">💌 Instagram</a>
+            <a href="#" target="_blank" class="social-media__link">💌 WhatsApp</a>
+        </div>
+        <section class="testimonios">
+            <h2 class="section__title">Lo que dicen nuestros clientes</h2>
+            <blockquote>"El mejor café de la ciudad, ¡totalmente recomendado!" - María L.</blockquote>
+            <blockquote>"Servicio excelente y postres deliciosos." - Carlos G.</blockquote>
+        </section>
+        <a href="#" class="chatbot-button" title="Habla con nosotros">💬</a>
+        <div data-aos="fade-up">
+            <!-- tu contenido -->
+        </div>
+    </section>
 
-<footer class="footer">
-    Developed by <a href="https://github.com/AdeslaGray/ProyectoEND-IDU" target="_blank">@AdeslaGray</a>
-</footer>
+    <!-- Footer -->
+    <footer class="footer">
+        Developed by <a href="https://github.com/AdeslaGray/ProyectoEND-IDU" target="_blank" class="footer__link">@AdeslaGray</a>
+    </footer>
+</body>
+
+</html>

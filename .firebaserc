@@ -1,1 +1,8 @@
-{}
+{
+  "projects": {
+    "default": "useful-music-454102-b5",
+    "adeslagray": "adeslagray-proyectoend-idu"
+  },
+  "targets": {},
+  "etags": {}
+}
